@@ -34,12 +34,12 @@ public class VendaTeste {
             //Log.e("Error","Erro no frete");
         }
 
-        v.setFrete(10);
+        v.setFrete(20);
 
         int quantidadeEsperada = 3;
         assertEquals(quantidadeEsperada, v.getQuantidade());
 
-        double valorTotalEsperado = 30+120+10+0;
+        double valorTotalEsperado = 30+120+10+20;
         assertEquals(valorTotalEsperado, v.getTotal(),0);
     }
 }
